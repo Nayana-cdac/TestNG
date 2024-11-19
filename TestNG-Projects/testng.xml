@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<parameter name="browser" value="chrome"></parameter>
+	<listeners>
+		<listener class-name="generateReport.Listeners"></listener>
+	</listeners>
+	<test thread-count="5" name="TestXml">
+		<classes>
+			<class name="testScript.FileUpload">
+			<!--	<methods>
+					<include name="robotClass"></include>
+				</methods> -->
+			</class>
+		<!--	<class name="testScript.Assertion" />
+			<class name="testScript.TestProgram" /> -->
+		</classes>
+	</test> <!--
+	TestXml -->
+</suite> <!--
+Suite -->
